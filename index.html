@@ -2,21 +2,29 @@
 <html lang="pt-br" dir="ltr">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Site pessoal Jonas B. Franco - Projetos</title>
 		<style type="text/css">
 			body{
 				font-family: sans-serif;
+				margin: 20px 40px;
+			}
+			#mainbox{
+				font-size: 24px;
+				cursor: pointer;
+				transition: all .6s;
 			}
 			.sidemenu{
 					position: fixed;
 					top: 0px;
 					left: 0px;
 					height: 100%;
-					width: 300px;
+					width: 0px;
 					background-color: #222;
 					z-index: 1;
-					padding-top: 100%;
+					padding-top: 30%;
 					overflow-x: hidden;
+					transition: all .5s;
 			}
 			.sidemenu a{
 				padding: 8px 8px 8px 64px;
@@ -38,14 +46,26 @@
 		</style>
 	</head>
 	<body>
-		<div id="mainbox">&#9776; Open</div>
+		<div id="mainbox" onclick="openFunction()">&#9776;</div>
 		<div id="menu" class="sidemenu">
 			<a href="#">Home</a>
 			<a href="#">Sobre</a>
 			<a href="#">Contato</a>
 			<a href="#">Login</a>
-			<a class="closebtn" href="#">&times;</a>
+			<a class="closebtn" onclick="closeFunction()" href="#">&times;</a>
 		</div>
-		<script type="text/javascript"></script>
+
+		<script type="text/javascript">
+			function openFunction(){
+				document.getElementById("menu").style.width="300px";
+				/*document.getElementById("mainbox").style.marginLeft="300px";*/
+				/*document.getElementById("mainbox").style.innerHTML="Clique para Fechar o Menu";*/
+			}
+			function closeFunction(){
+				document.getElementById("menu").style.width="0px";
+				/*document.getElementById("mainbox").style.marginLeft="0px";*/
+				/*document.getElementById("mainbox").style.innerHTML="&#9776";*/
+			}
+		</script>
 	</body>
 </html>
