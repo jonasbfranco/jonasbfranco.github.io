@@ -3,15 +3,48 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Site pessoal Jonas B. Franco - Projetos</title>
-		<style type="text/css"></style>
+		<style type="text/css">
+			body{
+				font-family: sans-serif;
+			}
+			.sidemenu{
+					position: fixed;
+					top: 0px;
+					left: 0px;
+					height: 100%;
+					width: 300px;
+					background-color: #222;
+					z-index: 1;
+					padding-top: 100%;
+					overflow-x: hidden;
+			}
+			.sidemenu a{
+				padding: 8px 8px 8px 64px;
+				text-decoration: none;
+				font-size: 20px;
+				color: #999;
+				display: block;
+			}
+			.sidemenu a:hover{
+				color: white;
+			}
+			.sidemenu .closebtn{
+				position: absolute;
+				top: 0px;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 32px;
+			}
+		</style>
 	</head>
 	<body>
+		<div id="mainbox">&#9776; Open</div>
 		<div id="menu" class="sidemenu">
 			<a href="#">Home</a>
 			<a href="#">Sobre</a>
 			<a href="#">Contato</a>
 			<a href="#">Login</a>
-			<a href="#">&times;</a>
+			<a class="closebtn" href="#">&times;</a>
 		</div>
 		<script type="text/javascript"></script>
 	</body>
