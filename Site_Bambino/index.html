@@ -249,7 +249,104 @@
 
 
 
+  <!-- Inicio Whatsapp -->
+  <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js" integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=" crossorigin="anonymous"></script> <!-- remova se você já tiver o jquery sendo carregado em sua página -->
+  <script src="assets/js/jquery.cookie.min.js"></script>
+    <script type='text/javascript'>
+    /*
+    Created on : 24/02/2019, 13:27:07
+    Author : ebrahimpleite
+    */
+    $(document).ready(function () {
+    var cookieMessagePrimary = $.cookie("wc_whatsapp_primary");
+    if (cookieMessagePrimary !== '1') {
+    $.cookie("wc_whatsapp_primary", 1, {expires: 360}); //Mensagem Principal volta exibir após de 30 dias
+    setTimeout(showMessagePrimary, 4000);
+    } else {
+    //se tiver no mobile, a mensagem primária não exibe
+    if (screen.width > 550) {
+    setTimeout(showMessageSecondary, 4000);
+    }
+    }
+    //esconde mensagem secundária ao clicar
+    $('.wc_whatsapp_secondary').click(function () {
+    $(this).fadeOut(400);
+    });
+    //esconde mensagem primária ao clicar
+    $('.wc_whatsapp_primary').click(function () {
+    $(this).fadeOut(400);
+    });
+    //controla botão de fechar da mensagem primária
+    $('.wc_whatsapp_primary .close').click(function () {
+    $('.wc_whatsapp_primary').fadeOut(400);
+    return false;
+    });
+    //esconde mensagem secundária ao passar o mouse no botão
+    $('.wc_whatsapp').hover(function () {
+    $('.wc_whatsapp_secondary').fadeOut(400);
+    });
 
+    //função para exibir mensagem secundária
+    function showMessageSecondary() {
+    $('.wc_whatsapp_secondary').fadeIn(400);
+    }
+
+    //função para exibir mensagem primária
+    function showMessagePrimary() {
+    $('.wc_whatsapp_primary').fadeIn(400).css("display", "flex");
+    }
+    });
+    </script>
+    <div class="wc_whatsapp_app right">
+    <a href="https://wa.me/5517996330704" target="_blank" class="wc_whatsapp" >
+    <!-- COMENTARIOS JONAS
+    <span class="wc_whatsapp_primary">
+    <span class="close">x</span>
+    <img src="http://www.bambinoeventos.com.br/public/logo/logo.jpg"/>
+    <p>Olá, como posso te ajudar ?</p>
+    </span>
+    </a>
+    <a href="https://wa.me/5517996330704" target="_blank" class="wc_whatsapp_secondary" >
+    <p>Olá, como posso te ajudar ?</p> FIM DO COMENTARIO -->
+    </a>
+    </div>
+  <!-- Fim Whatsapp -->
+
+  <script>
+    $('nav ul li.btn span').click(function(){
+      $('nav ul div.items').toggleClass("show");
+      $('nav ul li.btn span').toggleClass("show");
+    });
+  </script>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
 
 
 
