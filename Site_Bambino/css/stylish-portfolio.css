@@ -581,7 +581,12 @@ Author : ebrahimpleite
   transition: .3s;
 }
 
-.p-jonas {
+.p-3-mod a span {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.p-3-mod i {
   color: #fff !important;
   font-weight: 600;
 }

@@ -278,8 +278,11 @@ opacity: 1;
     border-radius: 5px;
     transition: .3s;
 }
-
-.p-jonas {
+.p-3-mod a span {
+  color: $white !important;
+  font-weight: 600;
+}
+.p-3-mod i {
   color: $white !important;
   font-weight: 600;
 }
