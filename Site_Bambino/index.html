@@ -13,6 +13,7 @@
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -38,48 +39,34 @@
         <a class="js-scroll-trigger" href="#page-top">Home</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">Sobre nós</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Serviços</a>
-      </li>
-      <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#portfolio">Espacos</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Redes sociais</a>
+        <a class="js-scroll-trigger" href="#endereco">Endereço</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#sociais">Redes sociais</a>
       </li>
     </ul>
   </nav>
 
+
+
   <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1 texto-jonas">Bambino Eventos</h1>
-      <h3 class="mb-5 texto-jonas">
-        <em>Onde seus sonhos viram Festas</em>
-      </h3>
-      <a class="btn btn-primary-mod-jonas btn-xl js-scroll-trigger" href="https://wa.me/5517996330704" target="_blank">Agende sua Festa</a>
+  <header class="masthead">
+    <div class="container">
+      <div class="masthead-subheading text-uppercase texto-jonas-amarelo">Bambino Eventos</div>
+      <div class="masthead-heading text-uppercase texto-jonas-branco">Onde sonhos viram Festas</div>
+      <a class="btn btn-primary-mod-jonas btn-xl text-uppercase js-scroll-trigger" href="https://wa.me/5517996330704" target="_blank">Agende sua Festa</a>
     </div>
     <div class="overlay"></div>
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- Services -->
-  <section class="content-section bg-primary text-white text-center" id="services">
+  <!--
+  <section class="content-section bg-secondary text-white text-center" id="services">
     <div class="container">
       <div class="content-section-heading">
         <h3 class="text-secondary mb-0">Serviços</h3>
@@ -127,30 +114,22 @@
       </div>
     </div>
   </section>
+-->
 
-  <!-- Callout -->
-  <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
-    </div>
-  </section>
 
   <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
+  <section class="content-section bg-primary" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
         <h2 class="text-secondary mb-0">Espaços</h2>
-        <h2 class="mb-5">pensados para você</h2>
+        <h2 class="mb-5">pensados para se sonho</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Stationary</h2>
+                <h2>Área Externa</h2>
                 <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
               </span>
             </span>
@@ -161,7 +140,7 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Ice Cream</h2>
+                <h2>Brinquedos</h2>
                 <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
               </span>
             </span>
@@ -172,7 +151,7 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Strawberries</h2>
+                <h2>Canto da Amamentação</h2>
                 <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
               </span>
             </span>
@@ -183,7 +162,7 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Workspace</h2>
+                <h2>bathrooms</h2>
                 <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
               </span>
             </span>
@@ -194,42 +173,87 @@
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+
+
+  <!-- Curta nossas redes sociasi -->
+  <section class="contact bg-primary-social" id="sociais">
+    <div class="container">
+      <h2>Nós
+        <i class="fas fa-heart"></i>
+        novos amigos!</h2>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-instagram">
+          <a href="https://www.instagram.com/festachic_/" target="blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-facebook">
+          <a href="https://www.facebook.com/Festa-Chic-316485178859804/" target="blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <!-- <li class="list-inline-item social-whatsapp">
+          <a href="#">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li> -->
+      </ul>
+      <br><div><h3>#comemorenobambino</h3></div>
     </div>
   </section>
+  <!-- Fim das redes sosicas -->
 
-  <!-- Map -->
-  <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br />
-    <small>
-      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-  </section>
+
+  <!-- Maps endereco inicio -->
+  <div class="p-3 bg-light" id="endereco">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 align-self-center text-lg-left text-center">
+
+          <div class="row">
+            <div class="col-lg-4">
+              <h5 class="text-black text-bold text-center">
+                <i class="fas fa-map-marked-alt"></i>
+                <i class="fab fa-waze"></i>
+              </h5>
+            </div>
+
+            <div class="col-lg-8">
+              <h5 class="text-center text-black text-bold">
+                <b>&nbsp;Como chegar</b>
+              </h5>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+          <iframe width="100%" height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.5137535591207!2d-48.813188684455554!3d-21.25112198623228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDE1JzA0LjEiUyA0OMKwNDgnMzkuNiJX!5e0!3m2!1spt-BR!2sbr!4v1585417882402!5m2!1spt-BR!2sbr" scrolling="no" frameborder="0"> </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Maps endereço - fim -->
+
+
 
 
   <!-- Footer -->
   <footer class="footer text-center bg-dark">
     <div class="container" style="">
       <div class="row">
-        <div class="col-md-4 p-3-mod" style="">
+        <!-- <div class="col-md-4 p-3-mod" style="">
           <h2 class="mb-4-mod text-white">Midias</h2>
           <span class="md-facebook"><a href="https://www.facebook.com/Festa-Chic-316485178859804/" target="blank"><i class="fab fa-facebook-f fa-2x m-2"></i></a></span>
           <span class="mod-div md-instagram"><a href="https://www.instagram.com/festachic_/" target="blank"><i class=".md-instagram fab fa-instagram fa-2x m-2"></i></a></span>
           <span class="mod-div md-whatsapp"><a href="https://wa.me/5517996330704" target="blank"><i class="midias-sociais fab fa-whatsapp fa-2x m-2"></i></a></span>
-        </div>
-        <div class="col-md-4 p-3-mod-contato" style="">
+        </div> -->
+        <div class="col-md-6 p-3-mod p-3-mod-contato" style="">
           <h2 class="mb-4-mod text-white">Contato</h2>
           <span><i class="fas fa-mobile fa-1x m-2 p-jonas">&nbsp;&nbsp;&nbsp;(17)&nbsp;996197573</i></span>
           <!-- <br>
           <span class="p-jonas"><i class="fas fa-phone-alt fa-1x m-2">&nbsp;(17)&nbsp;3571-8364</i></span> -->
         </div>
-        <div class="col-md-4 p-3-mod" style="">
+        <div class="col-md-6 p-3-mod" style="">
           <h2 class="mb-4-mod text-white">Endereço</h2>
           <a class="no-underline" href="https://www.google.it/maps/place/21%C2%B015'04.2%22S+48%C2%B048'39.6%22W/@-21.2511687,-48.8115482,268m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d-21.2511695!4d-48.8110008" target="blank" class="text-white">
             <span>Rua 23 de Maio<br>Santa Adélia, São Paulo</span>
@@ -238,6 +262,11 @@
       </div> <!-- row -->
     </div>
   <!-- Fim do Rodape do Site -->
+  </footer> <!-- Fim footer -->
+
+
+
+  <footer>
   <!-- Inicio Desenvolvido por -->
     <div class="container">
       <div class="row">
@@ -247,7 +276,10 @@
         <div><hr></div>
       </div>
     </div>   <!-- Fim Desenvolvido por -->
-  </footer> <!-- Fim footer -->
+  </footer>
+
+
+
 
 
 
