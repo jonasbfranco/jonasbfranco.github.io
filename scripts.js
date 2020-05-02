@@ -6,6 +6,11 @@
     fontRatio: 8
   });
 
+  $('#pageHeadingProjects').flowtype({
+    minimum: 700,
+    fontRatio: 9.5
+  });
+
   $('#pageSubheading').flowtype({
     minimum: 700,
     fontRatio: 25
