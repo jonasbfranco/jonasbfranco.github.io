@@ -1,0 +1,341 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+  }
+  
+  /* Background e centralização */
+  body {
+    background-color: #121420;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Imagem de perfil */
+  .profile-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para o Nome e Título */
+  .profile-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h1 {
+    font-size: 1.8em;
+    /* color: #70e000; */
+    color: #FF5DA2;
+    margin-bottom: 5px;
+  }
+  
+  .profile-info p {
+    font-size: 1.2em;
+    color: #ffffff;
+    opacity: 0.8; /* Deixa o texto um pouco mais discreto */
+  }
+  
+  /* Container principal */
+  .container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #2c2b3c; /* Borda em tom mais claro */
+    background-color: #1b2432;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  /* Título */
+  h1 {
+    /* color: #70e000; */
+    color: #FF5DA2;
+    margin-bottom: 20px;
+  }
+  
+  /* Links estilizados */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .link-btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #403f4c;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .link-btn i {
+    font-size: 1.2em;
+  }
+  
+  .link-btn:hover {
+    background-color: #2c2b3c;
+    /* border-color: #70e000; */
+    border-color: #FF5DA2;
+    /* color: #70e000; */
+    color: #FF5DA2;
+  }
+  
+  /* Efeito de pulsar */
+  @keyframes pulsar {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .pulsar-efeito {
+    animation: pulsar 1.5s infinite;
+  }
+  
+  /* Estilos para o Container de Portfólio */
+  .portfolio-container {
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .portfolio-container h1 {
+    /* color: #70e000; */
+    color: #FF5DA2;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  /* Grid de Portfólio */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  /* Cartão de Projeto */
+  .project-card {
+    background-color: #1b2432;
+    border: 2px solid #2c2b3c;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  /*.project-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }*/
+  
+  /* Ajuste para o banner ocupar toda a largura do cartão */
+  .project-card img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do cartão */
+    height: 150px; /* Define uma altura específica para o banner */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    border-radius: 8px 8px 0 0; /* Bordas arredondadas apenas no topo */
+  }
+  
+  .project-card p {
+    margin: 10px 0;
+    font-size: 1em;
+    opacity: 0.9;
+    text-align: left;
+  }
+  
+  /* Botão Ver Projeto */
+  .view-project-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #403f4c;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .view-project-btn:hover {
+    background-color: #2c2b3c;
+    /* border-color: #70e000; */
+    border-color: #FF5DA2;
+    /* color: #70e000; */
+    color: #FF5DA2;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Estilo do botão de voltar */
+  .back-btn {
+    margin-top: 10px;
+    font-size: 1em; /* Ajuste conforme necessário */
+  }
+  
+  /* Estilos para o Footer */
+  footer {
+    margin-top: 20px; /* Espaçamento acima do footer */
+    text-align: center; /* Centraliza o texto */
+    color: #ffffff; /* Cor do texto */
+    font-size: 0.9em; /* Tamanho da fonte */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+  
+    .container {
+        padding: 15px;
+    }
+  
+    h1 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte para telas menores */
+    }
+  
+    .link-btn {
+        font-size: 1.1em; /* Ajusta o tamanho da fonte dos links */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+  
+    .container {
+        padding: 10px;
+    }
+  
+    h1 {
+        font-size: 1.3em; /* Ajusta ainda mais o tamanho da fonte para telas pequenas */
+    }
+  
+    .link-btn {
+        padding: 12px; /* Reduz o padding em telas pequenas */
+        font-size: 1em; /* Ajusta o tamanho da fonte dos links */
+    }
+  }
+  
+  /*
+  ########################################################################
+  ########## - TESTANDO VISUAL PARA A NOVA PÁGINA PORTFOLIO 2 - ##########
+  ########################################################################
+  */
+  
+  /* Ajustes para a grid de Portfólio em 2 colunas */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Estilos do Banner do Projeto */
+  .project-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Título e descrição do projeto */
+  .project-card h2 {
+    font-size: 1.5em;
+    /* color: #70e000; */
+    color: #FF5DA2;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .project-description {
+    font-size: 1em;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Rodapé do Projeto */
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-date {
+    font-size: 0.9em;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  
+  /* Estilo para o botão "Veja +" */
+  .view-project-btn {
+    font-size: 1em;
+    padding: 8px 12px;
+    text-decoration: none;
+    background-color: #403f4c;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-project-btn:hover {
+    background-color: #2c2b3c;
+    /* border-color: #70e000; */
+    border-color: #FF5DA2;
+    /* color: #70e000; */
+    color: #FF5DA2;
+  }
+  
+  /* Responsividade: ajuste para telas menores */
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+  }
